@@ -10,6 +10,9 @@ jobs:
       - name: Install Modules
         shell: bash
         run: npm ci
+      - name: Install Act
+        shell: bash
+        run: brew install act
       - name: Run Tests
         shell: bash
         run: npm run example
