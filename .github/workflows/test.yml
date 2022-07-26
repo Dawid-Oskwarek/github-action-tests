@@ -16,3 +16,5 @@ jobs:
       - name: Run Tests
         shell: bash
         run: npm run example
+        env:
+          TOKEN: ${{ secrets.TOKEN }}
