@@ -3,7 +3,7 @@ on:
   pull_request:
   workflow_dispatch:
 jobs:
-  exampleJob:
+  example:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

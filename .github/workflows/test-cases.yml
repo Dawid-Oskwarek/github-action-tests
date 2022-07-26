@@ -2,7 +2,7 @@ name: Test-Cases
 on:
   workflow_dispatch:
 jobs:
-  example:
+  exampleJob:
     runs-on: ubuntu-latest
     steps:
       - name: Get Action
