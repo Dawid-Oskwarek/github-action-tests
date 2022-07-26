@@ -1,0 +1,17 @@
+{
+    "name": "github-action-tests",
+    "version": "1.0.0",
+    "description": "Tests to validate github action using ACT",
+    "main": "N/A",
+    "scripts": {
+        "example": "mocha ./tests/example.js"
+    },
+    "author": "Dawid Oskwarek",
+    "license": "N/A",
+    "dependencies": {
+        "chai": "^4.3.6",
+        "mocha": "^10.0.0",
+        "shelljs": "^0.8.5"
+    },
+    "type": "module"
+}
