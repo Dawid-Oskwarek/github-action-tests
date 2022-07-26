@@ -10,6 +10,7 @@ jobs:
         with:
           repository: Dawid-Oskwarek/broken-link-checker-action
           ref: main
+          token: ${{ secrets.TOKEN }}
           path: ./
       - name: Check for Broken Links
         uses: ./
