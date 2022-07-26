@@ -1,4 +1,4 @@
-import * as sh from 'shelljs';
+import sh from 'shelljs';
 
 const opts = {
     maxBuffer: 10240 * 10240,
