@@ -8,8 +8,8 @@ const opts = {
 const token = process.env.TOKEN;
 
 export const actCmd = (jobName) => {
-    console.log(`Running Command: act -j ${jobName} -P ubuntu-latest=ghcr.io/catthehacker/ubuntu:full-latest`);
-    const exec = sh.exec(`act -j ${jobName} -P ubuntu-latest=ghcr.io/catthehacker/ubuntu:full-latest -s TOKEN=${token}`, opts);
+    console.log(`Running Command: act -j ${jobName}`);
+    const exec = sh.exec(`act -j ${jobName} -s TOKEN=${token}`, opts);
     if (exec.code !== 0) {
         console.error('WARNING');
         console.error(`Non-zero exit code. Code was ${exec.code}`);
