@@ -1,4 +1,6 @@
 name: Example
+on:
+  workflow_dispatch:
 jobs:
   example:
     runs-on: ubuntu-latest
