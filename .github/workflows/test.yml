@@ -6,13 +6,10 @@ jobs:
   example:
     runs-on: ubuntu-latest
     steps:
-      - name: Get Action
-        uses: actions/checkout@v3
-        with:
-          repository: Dawid-Oskwarek/broken-link-checker-action
-          ref: main
-          path: ./
-      - name: Check for Broken Links
-        uses: ./
-        with:
-          urlsToCheck: 'https://www.google.com'
+      - uses: actions/checkout@v3
+      - name: Install Modules
+        shell: bash
+        run: npm ci
+      - name: Run Tests
+        shell: bash
+        run: npm run example
